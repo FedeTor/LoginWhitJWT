@@ -70,7 +70,7 @@ dotnet ef migrations add InitialCreate --project "Login\Infrastructure\Infrastru
 dotnet ef database update --project "Login\Infrastructure\Infrastructure.csproj" --startup-project "Login\Api.Presentation\Api.Presentation.csproj"
 ```
 
-##⚙️ **_Instrucciones de Ejecución_**
+## ⚙️ **_Instrucciones de Ejecución_**
 
 **Requisitos Previos**
 - .NET 8. (.NET 7.0 SDK o superior).
@@ -91,14 +91,14 @@ La API User documentada con Swagger estará disponible en ```https://localhost:7
 
 Además se agregó una carpeta "src/Documentation" con la coleccion de postman "LoginWhitJWT.postman_collection.json", solo queda descargarla e importarla si se desea utilizar.
 
-##📜 **_Estructura del Proyecto_**
+## 📜 **_Estructura del Proyecto_**
 
 El proyecto está organizado en dos carpetas principales que corresponden a los microservicios:
 
 - **Login API**: Un servicio que valida las credenciales de los usuarios y genera tokens JWT para la autenticación.
 - **User API**: Un servicio CRUD que permite la administración (ABM) de usuarios, facilitando la creación, lectura, actualización y eliminación de datos, mientras utiliza JWT para la autorización segura.
 
-## Funcionamiento de las APIs
+## 📜 Funcionamiento de las APIs
 
 ### Login API
 
