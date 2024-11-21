@@ -53,7 +53,7 @@ La base de datos predeterminada es PostgreSQL.
 
 Dentro de la carpeta "src/Documentation" se encuentra el script "SQLQuery" para crear la base de datos de forma manual con las tablas correspondientes, opcionalmente se puede hacer mediante un enfoque Code First.
 
-**Enfoque Code First**: A continuación se describen los pasos para configurar y migrar la base de datos:
+### **Enfoque Code First**: A continuación se describen los pasos para configurar y migrar la base de datos:
 
 **Requisitos Previos**
 - Las entidades y el DbContext ya se encuentran definidas.
