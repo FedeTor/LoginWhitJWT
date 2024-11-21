@@ -40,7 +40,7 @@ Esto facilita el mantenimiento y escalabilidad de la aplicación.
 - **Principios SOLID**: Código modular, con baja dependencia entre clases y alta cohesión.
 - **POO** (Programación Orientada a Objetos): Uso de encapsulación, herencia y polimorfismo para crear componentes reutilizables y flexibles.
 - **DRY** (Don't Repeat Yourself): Minimiza la repetición innecesaria de código.
-  **Resumen de Reglas OWASP Implementadas**
+- **Resumen de Reglas OWASP Implementadas**
 - **Validación de datos**: Se valida toda la entrada del usuario para garantizar que los datos sean correctos y evitar inyecciones de código.
 - **Autenticación con JWT** y **Cifrado de datos sensibles**, utilizando claves fuertes y expiración corta.
 - **Configuración segura**: evitando la exposición de datos sensibles, especialmente claves y configuraciones.
@@ -51,7 +51,7 @@ Esto facilita el mantenimiento y escalabilidad de la aplicación.
 
 La base de datos predeterminada es PostgreSQL.
 
-Dentro de la carpeta "Documentation" se encuentra el script para crear la base de datos con la tabla correspondiente, opcionalmente se puede hacer mediante un enfoque Code First.
+Dentro de la carpeta "src/Documentation" se encuentra el script "SQLQuery" para crear la base de datos de forma manual con las tablas correspondientes, opcionalmente se puede hacer mediante un enfoque Code First.
 
 **Enfoque Code First**: A continuación se describen los pasos para configurar y migrar la base de datos:
 
