@@ -21,7 +21,7 @@ Este proyecto incorpora patrones de diseño y principios para mantener el códig
 
 - **Dependency Injection**: Gestiona las dependencias entre componentes y servicios.
 - **DTOs (Data Transfer Objects)**: Facilitan el transporte de datos entre capas, protegiendo la integridad de las entidades.
-- **Error Handling y Logging**: Estructura la gestión de errores y logs, optimizando la detección y solución de problemas en producción.
+- **Error Handling y Logging**: Estructura la gestión de errores y logs, optimizando la detección y solución de problemas en producción. En cada una de las apis se utiliza la gestion de errores de manera diferente, la eleccion adecuada depende del negocio y sus necesidades.
 
 🏛️ **_Arquitectura_**
 
