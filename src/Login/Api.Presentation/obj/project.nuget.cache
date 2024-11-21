@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m6HW6WaBm8U6QZBxukPAH7R6sG5DwEWvhKKQ2slQ5YVyeovlipOlbCxjuAf+NpEkebyXWzWLNQM9emJ3bsi7sA==",
+  "dgSpecHash": "0QZC+OvHtId+KtSLRduEb9IPhMd1yLwvfx/6B3+86acXogl+eY7YE2fZ7YuX75u0UVU68mEPkQM1SYSIugenjw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\JWT\\src\\Login\\Api.Presentation\\Api.Presentation.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Login\\LoginWhitJWT\\src\\Login\\Api.Presentation\\Api.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.10\\microsoft.aspnetcore.authentication.jwtbearer.8.0.10.nupkg.sha512",

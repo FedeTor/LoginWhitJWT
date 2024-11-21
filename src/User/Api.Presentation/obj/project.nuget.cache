@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1MnuhFFGP4MKpkghViYq5VUyn8tqjCn28+S1SCqve2CkOQdgsp0FGaztXYkJibt8OjNw0O4cZd8klHqVgeNSHA==",
+  "dgSpecHash": "4Gq+WLCP6YRrary7ecwMbXqjnKIs96b6PSAAZuONBx4x+dTGW+vIXmzmWL4VkkEbWPy5ONvwGj29D2qQ7kzNJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\JWT\\src\\User\\Api.Presentation\\Api.Presentation.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Login\\LoginWhitJWT\\src\\User\\Api.Presentation\\Api.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.10\\microsoft.aspnetcore.authentication.jwtbearer.8.0.10.nupkg.sha512",

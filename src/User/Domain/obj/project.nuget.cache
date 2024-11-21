@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HNQkPRf/UdvPtrQ34WFwLva8dDdaQ4F20tRQEqgQWo+JSJLD0ufrQkJL6qLr7Yzlg8O5eIR85D45Xi4+qWaEVA==",
+  "dgSpecHash": "cMoR2DbLrQsO3ncbu2JpUWjkUzfTinvLl6QA22lY5GuVXColJTT/nbRlPN9z0I5VRxoHj2cJENNXpT1mpmpB+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\JWT\\src\\User\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Login\\LoginWhitJWT\\src\\User\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tQ+zTEEw6DvzMNWc+rvT7HCwB3UDj1liaCKxcWH167zhr0GE+9T+L4d9Rig888gYVtz0RJ5VWKUojmohrEA5Qg==",
+  "dgSpecHash": "+XyK7TwaMWmJpBnJh2q7az3nk+0pDFzYgRmEArrGFMt7YZIb8gMri5hq8C0CZNjNaVtOL0GTkSWy56PxKgp0ZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\JWT\\src\\User\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Login\\LoginWhitJWT\\src\\User\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
