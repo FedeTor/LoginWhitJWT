@@ -70,7 +70,7 @@ dotnet ef migrations add InitialCreate --project "Login\Infrastructure\Infrastru
 dotnet ef database update --project "Login\Infrastructure\Infrastructure.csproj" --startup-project "Login\Api.Presentation\Api.Presentation.csproj"
 ```
 
-⚙️ **_Instrucciones de Ejecución_**
+##⚙️ **_Instrucciones de Ejecución_**
 
 **Requisitos Previos**
 - .NET 8. (.NET 7.0 SDK o superior).
@@ -89,9 +89,9 @@ dotnet ef database update --project "Login\Infrastructure\Infrastructure.csproj"
 La API Login documentada con Swagger estará disponible en ```https://localhost:7249/swagger```
 La API User documentada con Swagger estará disponible en ```https://localhost:7275/swagger```
 
-Además se agregó una carpeta "Documentation" con la coleccion de postman, solo queda descargarla e importarla si se desea utilizar.
+Además se agregó una carpeta "src/Documentation" con la coleccion de postman "LoginWhitJWT.postman_collection.json", solo queda descargarla e importarla si se desea utilizar.
 
-📜 **_Estructura del Proyecto_**
+##📜 **_Estructura del Proyecto_**
 
 El proyecto está organizado en dos carpetas principales que corresponden a los microservicios:
 
