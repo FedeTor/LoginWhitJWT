@@ -105,7 +105,7 @@ _**Login API**_
 La **Login API** tiene como objetivo autenticar a los usuarios utilizando sus credenciales (usuario y contraseña), y luego genera un **JWT** que se usa para la autorización en 
 otras API del sistema.
 
-_**Endpoints**_
+**Endpoints**
 
 - **POST ```/api/login/authorize```**
   - Recibe las credenciales del usuario (correo electrónico y contraseña).
@@ -125,7 +125,7 @@ _**User API**_
 La **User API** proporciona un conjunto de operaciones para gestionar usuarios. Esta API requiere que las solicitudes estén autenticadas a través de un **JWT** para poder acceder a 
 los endpoints de usuario.
 
-_**Endpoints**_
+**Endpoints**
 - GET **```/api/user/all```**: Obtiene todos los usuarios
 - GET **```/api/user/get```**: Obtiene un usuario por ID
 - POST **```/api/user/create```**: Agrega un nuevo usuario
