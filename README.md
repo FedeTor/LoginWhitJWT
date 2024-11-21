@@ -98,7 +98,7 @@ El proyecto está organizado en dos carpetas principales que corresponden a los 
 - **Login API**: Un servicio que valida las credenciales de los usuarios y genera tokens JWT para la autenticación.
 - **User API**: Un servicio CRUD que permite la administración (ABM) de usuarios, facilitando la creación, lectura, actualización y eliminación de datos, mientras utiliza JWT para la autorización segura.
 
-## 📜 Funcionamiento de las APIs
+## 📜 _**Funcionamiento de las APIs**_
 
 _**Login API**_
 
