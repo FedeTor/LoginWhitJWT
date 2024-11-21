@@ -100,12 +100,12 @@ El proyecto está organizado en dos carpetas principales que corresponden a los 
 
 ## 📜 Funcionamiento de las APIs
 
-### Login API
+_**Login API**_
 
 La **Login API** tiene como objetivo autenticar a los usuarios utilizando sus credenciales (usuario y contraseña), y luego genera un **JWT** que se usa para la autorización en 
 otras API del sistema.
 
-#### Endpoints
+_**Endpoints**_
 
 - **POST ```/api/login/authorize```**
   - Recibe las credenciales del usuario (correo electrónico y contraseña).
@@ -120,12 +120,12 @@ otras API del sistema.
 - **POST ```/api/login/revokeToken```**
   - Permite revocar un token JWT en caso de que el usuario cierre sesión o quiera invalidar su sesión actual.
  
-### User API
+_**User API**_
 
 La **User API** proporciona un conjunto de operaciones para gestionar usuarios. Esta API requiere que las solicitudes estén autenticadas a través de un **JWT** para poder acceder a 
 los endpoints de usuario.
 
-#### Endpoints
+_**Endpoints**_
 - GET **```/api/user/all```**: Obtiene todos los usuarios
 - GET **```/api/user/get```**: Obtiene un usuario por ID
 - POST **```/api/user/create```**: Agrega un nuevo usuario
