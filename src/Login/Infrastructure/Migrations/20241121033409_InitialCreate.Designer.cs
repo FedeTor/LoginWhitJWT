@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(PostgreDbContext))]
-    [Migration("20241116215756_InitialCreate")]
+    [Migration("20241121033409_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -82,9 +82,6 @@ namespace Infrastructure.Migrations
 
                     b.Property<string>("LastName")
                         .HasColumnType("text");
-
-                    b.Property<int?>("RoleId")
-                        .HasColumnType("integer");
 
                     b.Property<string>("Salt")
                         .HasColumnType("text");

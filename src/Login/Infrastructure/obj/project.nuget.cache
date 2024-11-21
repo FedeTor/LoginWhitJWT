@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f13V9S/ltflsNVdGgf9kkCpsC3+cbAGQrVJsjZIX/YlPHZIcjc535IXPwMjHV5jg2f+XhaeH5N1rOTkBVMQhug==",
+  "dgSpecHash": "QUR1/Bnsx2Lt+R8fRnsn6Fx+8HqDmG4IrRSFfHPH4NINlAXtcoWVxRdutJ9OQ+usrJBn4rAzZSARwU6P6ulRsw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Login\\Microservicio.Login\\src\\Login\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\JWT\\src\\Login\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

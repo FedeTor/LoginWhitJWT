@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO\\Desktop\\Login\\Microservicio.Login\\src\\Login\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\Users\\LENOVO\\Desktop\\JWT\\src\\Login\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO\\Desktop\\Login\\Microservicio.Login\\src\\Login\\Domain\\Domain.csproj": {
+    "C:\\Users\\LENOVO\\Desktop\\JWT\\src\\Login\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\Login\\Microservicio.Login\\src\\Login\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\JWT\\src\\Login\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\LENOVO\\Desktop\\Login\\Microservicio.Login\\src\\Login\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\LENOVO\\Desktop\\JWT\\src\\Login\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\Desktop\\Login\\Microservicio.Login\\src\\Login\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\LENOVO\\Desktop\\JWT\\src\\Login\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\LENOVO\\Desktop\\Login\\Microservicio.Login\\src\\Login\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\LENOVO\\Desktop\\JWT\\src\\Login\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\Login\\Microservicio.Login\\src\\Login\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\JWT\\src\\Login\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\LENOVO\\Desktop\\Login\\Microservicio.Login\\src\\Login\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\LENOVO\\Desktop\\JWT\\src\\Login\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\Desktop\\Login\\Microservicio.Login\\src\\Login\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\LENOVO\\Desktop\\JWT\\src\\Login\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,8 +91,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\LENOVO\\Desktop\\Login\\Microservicio.Login\\src\\Login\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\LENOVO\\Desktop\\Login\\Microservicio.Login\\src\\Login\\Domain\\Domain.csproj"
+              "C:\\Users\\LENOVO\\Desktop\\JWT\\src\\Login\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\LENOVO\\Desktop\\JWT\\src\\Login\\Domain\\Domain.csproj"
               }
             }
           }

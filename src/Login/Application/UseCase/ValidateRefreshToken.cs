@@ -63,7 +63,7 @@ namespace Application.UseCase
         private async Task<TokenHistory> GenerateAndSaveNewTokensAsync(User user, int tokenExpirationTime, TokenHistory mappingObject)
         {
             var generateToken = new TokenService(_configuration);
-            var newAccessToken = generateToken.GenerateAccessToken(user.Id.ToString(), user.RoleId.ToString());
+            var newAccessToken = generateToken.GenerateAccessToken(user.Id.ToString());
             var newRefreshToken = generateToken.GenerateRefreshToken();
 
             var argentinaTime = DateTimeHelper.GetArgentinaTime();

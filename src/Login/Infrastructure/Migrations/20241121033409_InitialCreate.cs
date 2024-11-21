@@ -25,8 +25,7 @@ namespace Infrastructure.Migrations
                     Hash = table.Column<string>(type: "text", nullable: true),
                     CreatedDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true),
                     UpdatedDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true),
-                    Active = table.Column<bool>(type: "boolean", nullable: true),
-                    RoleId = table.Column<int>(type: "integer", nullable: true)
+                    Active = table.Column<bool>(type: "boolean", nullable: true)
                 },
                 constraints: table =>
                 {

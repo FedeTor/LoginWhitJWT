@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M4QcnbwqstX9MgyUTGAWn5+xBwuFTdmrwEYLAP6NjQGmunIWBpu7erV2y9c9/MtHbVMtjwGwbzgqwBhDHnROJw==",
+  "dgSpecHash": "djs95CqSKsWM3VQxtW8OE5EFj7iIozHzMr29hRX/9103Onbm8jILQCmidl/GUyexiK+EyrJvowRWjeu+X91OKw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Login\\Microservicio.Login\\src\\Login\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\JWT\\src\\Login\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

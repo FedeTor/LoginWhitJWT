@@ -59,7 +59,7 @@ namespace Application.UseCase
             var generateToken = new TokenService(_configuration);
 
             var tokenHistoryData = new TokenHistoryDto(
-                accessToken: generateToken.GenerateAccessToken(request.Id.ToString(), request.RoleId.ToString()),
+                accessToken: generateToken.GenerateAccessToken(request.Id.ToString()),
                 refreshToken: generateToken.GenerateRefreshToken(),
                 tokenCreatedDate: tokenCreatedOn,
                 tokenExpiratedDate: tokenExpiratedOn,

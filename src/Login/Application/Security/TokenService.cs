@@ -16,15 +16,14 @@ namespace Application.Security
             _configuration = configuration;
         }
 
-        public string GenerateAccessToken(string idUser, string roleId)
+        public string GenerateAccessToken(string idUser)
         {
             var key = _configuration.GetSection("JwtSettings")["key"];
             var keyBytes = Encoding.ASCII.GetBytes(key!);
             var accessTokenExpire = int.Parse(_configuration.GetSection("JwtSettings")["AccessTokenExpire"]);
 
             var claims = new ClaimsIdentity(new[] {
-            new Claim("IdUser", idUser),
-            new Claim("RoleId", roleId)
+            new Claim("IdUser", idUser)
         });
 
             var credencialesToken = new SigningCredentials(

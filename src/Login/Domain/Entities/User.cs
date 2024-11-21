@@ -11,6 +11,5 @@
         public DateTime? CreatedDate { get; private set; }
         public DateTime? UpdatedDate { get; private set; }
         public bool? Active { get; private set; }
-        public int? RoleId { get; private set; }
     }
 }

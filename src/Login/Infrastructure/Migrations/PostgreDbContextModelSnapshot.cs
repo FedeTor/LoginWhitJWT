@@ -80,9 +80,6 @@ namespace Infrastructure.Migrations
                     b.Property<string>("LastName")
                         .HasColumnType("text");
 
-                    b.Property<int?>("RoleId")
-                        .HasColumnType("integer");
-
                     b.Property<string>("Salt")
                         .HasColumnType("text");
 
