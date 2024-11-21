@@ -1,4 +1,4 @@
-📂 **_Proyecto de Microservicios - Login y User API_**
+## 📂 **_Proyecto de Microservicios - Login y User API_**
 
 Este proyecto consiste en dos microservicios: **Login API** y **User API**, los cuales son servicios independientes que se comunican entre sí a través de solicitudes HTTP. 
 La aplicación sigue los principios de **Programación Orientada a Objetos (POO)** y las **buenas prácticas de desarrollo**, utilizando **JWT** para la autenticación y autorización de 
