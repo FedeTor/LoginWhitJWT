@@ -16,6 +16,9 @@ namespace Domain.Entities
 
         public User() { }
 
+        /// <summary>
+        /// Constructor que inicializa un nuevo usuario con el nombre, apellido, correo electrónico y contraseña.
+        /// </summary>
         public User(string firstName, string lastName, string email, string password)
         {
             FirstName = firstName;
@@ -27,6 +30,10 @@ namespace Domain.Entities
             Hash = Encryption.EncryptPassword(password, Salt);
         }
 
+        /// <summary>
+        /// Actualiza parcialmente los campos del usuario.
+        /// Solo se actualizan los campos que no sean nulos o vacíos y que hayan cambiado.
+        /// </summary>
         public void UpdatePartial(string firstName, string lastName, string email, string password)
         {
             if (!string.IsNullOrWhiteSpace(firstName) && firstName != FirstName)
@@ -55,18 +62,30 @@ namespace Domain.Entities
             }
         }
 
+        /// <summary>
+        /// Verifica si la contraseña proporcionada coincide con la contraseña cifrada almacenada.
+        /// </summary>
+        /// <param name="password">La contraseña en texto plano a verificar.</param>
+        /// <returns>True si la contraseña es válida, de lo contrario false.</returns>
         public bool VerifyPassword(string password)
         {
             var hashToVerify = Encryption.EncryptPassword(password, Salt);
             return Hash == hashToVerify;
         }
 
+        /// <summary>
+        /// Actualiza el correo electrónico del usuario.
+        /// </summary>
+        /// <param name="newEmail">El nuevo correo electrónico.</param>
         public void UpdateEmail(string newEmail)
         {
             Email = newEmail;
             UpdatedDate = DateTime.UtcNow;
         }
 
+        /// <summary>
+        /// Desactiva al usuario, estableciendo el estado de "Active" como false.
+        /// </summary>
         public void Deactivate()
         {
             Active = false;

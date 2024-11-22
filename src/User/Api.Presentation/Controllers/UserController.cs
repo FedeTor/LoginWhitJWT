@@ -56,7 +56,7 @@ namespace Api.Presentation.Controllers
         [HttpGet("get")]
         public async Task<IActionResult> GetUser(int id)
         {
-            _logger.LogInformation("Fetching user with ID: {UserId}", id);
+            _logger.LogInformation("Fetching user with ID: {0}", id);
             var user = await _serviceGetUser.GetUserAsync(id);
 
             return Ok(user);
@@ -65,7 +65,7 @@ namespace Api.Presentation.Controllers
         [HttpGet("all")]
         public async Task<IActionResult> GetAll(bool onlyActive = false)
         {
-            _logger.LogInformation("Fetching all users with onlyActive={OnlyActive}", onlyActive);
+            _logger.LogInformation("Fetching all users with onlyActive={0}", onlyActive);
             var users = await _serviceGetAllUsers.GetAllUsersAsync(onlyActive);
 
             return Ok(users);
@@ -74,7 +74,7 @@ namespace Api.Presentation.Controllers
         [HttpDelete("delete")]
         public async Task<IActionResult> DeleteUser(int id)
         {
-            _logger.LogInformation("Deleting users with IDs: {@UserIds}", id);
+            _logger.LogInformation("Deleting users with IDs: {0}", id);
             await _serviceDeleteUser.DeleteUserAsync(id);
 
             return Ok();

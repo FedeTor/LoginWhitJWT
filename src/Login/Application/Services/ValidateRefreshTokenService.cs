@@ -19,7 +19,7 @@ namespace Application.Services
 
         public async Task<IAuthorizeDto> RenewTokenService(TokenHistoryDto request)
         {
-            _logger.LogInformation("Start RenewToken - Request: {0}", request);
+            _logger.LogInformation("Start RenewTokenService - Request: {0}", request);
 
             return await _validateRefreshToken.UpdateToken(request);
         }

@@ -18,7 +18,7 @@ namespace Application.Services
 
         public async Task<bool> InvalidateTokenService(int id)
         {
-            _logger.LogInformation("Start InvalidateToken - Resquest: {0}", JsonConvert.SerializeObject(id));
+            _logger.LogInformation("Start InvalidateTokenService - Resquest: {0}", JsonConvert.SerializeObject(id));
 
             return await _revokeJwtToken.InvalidateToken(id);
         }

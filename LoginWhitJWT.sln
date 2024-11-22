@@ -17,13 +17,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Login
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "User", "User", "{C1025FB4-7A31-4B0A-B3E1-83CAA73FDD85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Presentation", "src\User\Api.Presentation\Api.Presentation.csproj", "{A7248C14-0125-4EAB-A96B-6786E71960FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Presentation", "src\User\Api.Presentation\Api.Presentation.csproj", "{A7248C14-0125-4EAB-A96B-6786E71960FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\User\Application\Application.csproj", "{3A828970-DC74-4811-B28E-5F0C3348D9FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\User\Application\Application.csproj", "{3A828970-DC74-4811-B28E-5F0C3348D9FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\User\Domain\Domain.csproj", "{BF0C05F2-2397-49D7-8008-1F8356386B43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\User\Domain\Domain.csproj", "{BF0C05F2-2397-49D7-8008-1F8356386B43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\User\Infrastructure\Infrastructure.csproj", "{CA7897C4-4A0A-4A83-833F-A834C0CCB118}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\User\Infrastructure\Infrastructure.csproj", "{CA7897C4-4A0A-4A83-833F-A834C0CCB118}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{910FAF47-0EFC-4203-B948-6D7845F62955}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Downloads\LoginWhitJWT.postman_collection.json = ..\..\..\Downloads\LoginWhitJWT.postman_collection.json
+		src\Documentation\SQLQuery.txt = src\Documentation\SQLQuery.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -78,6 +84,7 @@ Global
 		{3A828970-DC74-4811-B28E-5F0C3348D9FB} = {C1025FB4-7A31-4B0A-B3E1-83CAA73FDD85}
 		{BF0C05F2-2397-49D7-8008-1F8356386B43} = {C1025FB4-7A31-4B0A-B3E1-83CAA73FDD85}
 		{CA7897C4-4A0A-4A83-833F-A834C0CCB118} = {C1025FB4-7A31-4B0A-B3E1-83CAA73FDD85}
+		{910FAF47-0EFC-4203-B948-6D7845F62955} = {8BFEEA79-8C2F-4E7B-A0A7-5C34DF9CB13A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {76B1DBB0-A3E8-4FEE-806C-8BF24F8DF478}

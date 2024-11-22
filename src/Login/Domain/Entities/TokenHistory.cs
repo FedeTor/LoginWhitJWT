@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
+    /// <summary>
+    /// La interfaz <see cref="IIdentifiable"/> permite acceder a un identificador único.
+    /// </summary>
     public interface IIdentifiable
     {
         int Id { get; }
@@ -23,6 +26,9 @@ namespace Domain.Entities
 
         private TokenHistory() { }
 
+        /// <summary>
+        /// Método estático para crear una nueva instancia de <see cref="TokenHistory"/>.
+        /// </summary>
         public static TokenHistory Create(
             int id, string accessToken, string refreshToken, DateTime tokenCreatedDate, DateTime tokenExpiratedDate, int userId)
         {
@@ -37,6 +43,9 @@ namespace Domain.Entities
             };
         }
 
+        /// <summary>
+        /// Método de instancia para actualizar los valores del token.
+        /// </summary>
         public void Update(string accessToken, string refreshToken, DateTime tokenCreatedDate, DateTime tokenExpiratedDate)
         {
             AccessToken = accessToken;

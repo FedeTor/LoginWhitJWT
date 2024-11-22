@@ -19,7 +19,7 @@ namespace Application.UseCase
 
         public async Task<bool> InvalidateToken(int id)
         {
-            _logger.LogInformation("Start InvalidateTokenService - Resquest: {0}", JsonConvert.SerializeObject(id));
+            _logger.LogInformation("Start InvalidateToken - Resquest: {0}", JsonConvert.SerializeObject(id));
 
             var tokenIds = (await _historyTokenRepository.FindAllAsync(t => t.UserId == id)).Select(t => t.Id).ToList();
 

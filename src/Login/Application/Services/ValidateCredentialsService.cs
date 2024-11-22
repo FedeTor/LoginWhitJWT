@@ -18,7 +18,7 @@ namespace Application.Services
 
         public async Task<IAuthorizeDto> AuthenticateUserService(ILoginDto request)
         {
-            _logger.LogInformation("Start AuthenticateUser - Resquest: {0}", JsonConvert.SerializeObject(request.Email));
+            _logger.LogInformation("Start AuthenticateUserService - Resquest: {0}", JsonConvert.SerializeObject(request.Email));
 
             return await _validateCredentials.AuthenticateUser(request);
         }

@@ -4,7 +4,6 @@ namespace Domain.Interfaces.IUseCase
 {
     public interface ICreateUser
     {
-        Task SaveAsync(IUserDtoIn createUserDto);
-        
+        Task SaveAsync(IUserDtoIn createUserDto);        
     }
 }

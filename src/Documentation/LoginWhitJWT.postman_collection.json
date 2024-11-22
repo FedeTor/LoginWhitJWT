@@ -1,0 +1,302 @@
+{
+	"info": {
+		"_postman_id": "aeb1e5e8-2719-4da1-9fa0-1578d7adc4d7",
+		"name": "LoginWhitJWT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20356962",
+		"_collection_link": "https://lunar-zodiac-45082.postman.co/workspace/PERSONAL~17b048ea-549f-4622-b00d-3fccb54004ab/collection/20356962-aeb1e5e8-2719-4da1-9fa0-1578d7adc4d7?action=share&source=collection_link&creator=20356962"
+	},
+	"item": [
+		{
+			"name": "Api.User",
+			"item": [
+				{
+					"name": "/api/User/Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FirstName\": \"mi\",\r\n    \"LastName\": \"marciana\",\r\n    \"Email\": \"mi@gmail.com\",\r\n    \"Password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7275/api/User/Create",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7275",
+							"path": [
+								"api",
+								"User",
+								"Create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/User/all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFVzZXIiOiIxIiwibmJmIjoxNzMyMTU4NTMxLCJleHAiOjE3MzIxNTg1OTEsImlhdCI6MTczMjE1ODUzMX0.GUx_qNy0hoeoY0MXBk1103K9xzAlD-mr-vwU_xl2OUQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7275/api/User/all",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7275",
+							"path": [
+								"api",
+								"User",
+								"all"
+							],
+							"query": [
+								{
+									"key": "onlyActive",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/User/get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFVzZXIiOiIxIiwibmJmIjoxNzMyMTU4Njg4LCJleHAiOjE3MzIxNTg3NDgsImlhdCI6MTczMjE1ODY4OH0.oNU2w4ucDQTLrj3Q4jFYYM3W2e-SMvf5fUxpb04joNI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7275/api/User/get?Id=7",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7275",
+							"path": [
+								"api",
+								"User",
+								"get"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/User/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFVzZXIiOiIxIiwibmJmIjoxNzMyMTU4NzU0LCJleHAiOjE3MzIxNTg4MTQsImlhdCI6MTczMjE1ODc1NH0._qJ9Ve12mRYLfUrVICijagE-xFP3nRbvIhsu-O7G5xY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 7,\r\n    \"firstName\": \"cambio el nombre\",\r\n    \"lastName\": \"cambio el apellido\",\r\n    \"email\": \"bach@gmail.com\",\r\n    \"Password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7275/api/User/update",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7275",
+							"path": [
+								"api",
+								"User",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/User/delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFVzZXIiOiIxIiwibmJmIjoxNzMyMTU4ODM1LCJleHAiOjE3MzIxNTg4OTUsImlhdCI6MTczMjE1ODgzNX0.vAGTMm1XyJDBuUOYXLvt7768JHBTIT_Rp9C_GIMzFec",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7275/api/User/delete?id=8",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7275",
+							"path": [
+								"api",
+								"User",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Api.Login",
+			"item": [
+				{
+					"name": "/api/login/Authorize",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\":\"lio@gmail.com\",\r\n    \"Password\":\"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7249/api/login/Authorize",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7249",
+							"path": [
+								"api",
+								"login",
+								"Authorize"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/login/RefreshToken",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFVzZXIiOiIxIiwibmJmIjoxNzMyMTU4NjIwLCJleHAiOjE3MzIxNTg2ODAsImlhdCI6MTczMjE1ODYyMH0.E0go4eVWT_HoUvnOXzVBwCfxSP6gA5ZDfg2i8IzFO7A\",\r\n    \"refreshToken\": \"rLakWXCTYtmIhGVoLK7WVOjieRDBPlaKGUyTLSyf5NBl7t+gifqt7vxXLovAMXCVQNhTYjpzxtUFRpdnWuYbHg==\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7249/api/login/RefreshToken",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7249",
+							"path": [
+								"api",
+								"login",
+								"RefreshToken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/login/RevokeToken",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7249/api/login/RevokeToken?UserId=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7249",
+							"path": [
+								"api",
+								"login",
+								"RevokeToken"
+							],
+							"query": [
+								{
+									"key": "UserId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

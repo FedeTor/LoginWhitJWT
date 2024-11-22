@@ -10,6 +10,5 @@ namespace Domain.Interfaces.IUseCase
     public interface IGetAllUsers
     {
         Task<IEnumerable<IUserDtoOut>> GetAll(bool onlyActive);
-
     }
 }

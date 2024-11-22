@@ -9,7 +9,6 @@ namespace Domain.Interfaces.IUseCase
 {
     public interface IUpdateUser
     {
-
         Task UpdateAsync(IUserDtoIn userDto);
     }
 }

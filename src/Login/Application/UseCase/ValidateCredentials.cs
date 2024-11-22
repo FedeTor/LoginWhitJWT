@@ -30,7 +30,7 @@ namespace Application.UseCase
 
         public async Task<IAuthorizeDto> AuthenticateUser(ILoginDto request)
         {
-            _logger.LogInformation("Start AuthenticateUserService - Request: {0}", request.Email);
+            _logger.LogInformation("Start AuthenticateUser - Request: {0}", request.Email);
 
             var user = await _userRepository.FindAsync(u => u.Email == request.Email && u.Active == true);
             if (user == null)

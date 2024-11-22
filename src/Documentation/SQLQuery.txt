@@ -1,0 +1,24 @@
+
+CREATE DATABASE BDTest1
+
+CREATE TABLE "User" (  
+    "Id" SERIAL PRIMARY KEY,  
+    "FirstName" VARCHAR(255),  
+    "LastName" VARCHAR(255),  
+    "Email" VARCHAR(255),  
+    "Salt" VARCHAR(255),  
+    "Hash" VARCHAR(255),  
+    "CreatedDate" TIMESTAMP,  
+    "UpdatedDate" TIMESTAMP,  
+    "Active" BOOLEAN  
+);  
+
+CREATE TABLE "TokenHistory" (  
+    "Id" SERIAL PRIMARY KEY,  
+    "AccessToken" TEXT NOT NULL,  
+    "RefreshToken" TEXT NOT NULL,  
+    "TokenCreatedDate" TIMESTAMP NOT NULL,  
+    "TokenExpiratedDate" TIMESTAMP NOT NULL,  
+    "UserId" INT NOT NULL,  
+    FOREIGN KEY ("UserId") REFERENCES "User"("Id") ON DELETE CASCADE  
+);
