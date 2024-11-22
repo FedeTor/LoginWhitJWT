@@ -23,6 +23,7 @@ Este proyecto incorpora patrones de diseño y principios para mantener el códig
 - **DTOs (Data Transfer Objects)**: Facilitan el transporte de datos entre capas, protegiendo la integridad de las entidades.
 - **Error Handling y Logging**: Estructura la gestión de errores y logs, optimizando la detección y solución de problemas en producción. En cada una de las apis se utiliza la gestion de errores de manera diferente, la eleccion adecuada depende del negocio y sus necesidades.
 - **Factory Method**: Controla la creación de instancias mediante métodos especializados como `Create`, encapsulando la lógica de inicialización y permitiendo flexibilidad en la configuración de los objetos. Este patrón desacopla el proceso de creación de instancias, facilita la extensibilidad y respeta principios como el Open/Closed Principle y el Single Responsibility Principle.
+- **Repository Design Pattern**: Permite separar la lógica de acceso a datos de la lógica de negocio, mejorando así la flexibilidad y mantenibilidad del código.
 - **Principios SOLID**:
   - **S**ingle Responsibility Principle (SRP): Cada clase tiene una única responsabilidad, facilitando el mantenimiento y la comprensión del código.
   - **O**pen/Closed Principle (OCP): Las clases están abiertas a la extensión pero cerradas a la modificación, permitiendo agregar funcionalidades sin alterar el código existente.
