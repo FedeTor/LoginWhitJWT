@@ -46,7 +46,7 @@ Esto facilita el mantenimiento y escalabilidad de la aplicación.
 👨‍🏫 **_Buenas Prácticas Implementadas_**
 
 - **Principios SOLID**: Código modular, con baja dependencia entre clases y alta cohesión.
-- **POO** (Programación Orientada a Objetos): Uso de encapsulación, herencia y polimorfismo para crear componentes reutilizables y flexibles.
+- **POO** (Programación Orientada a Objetos): Uso de abstraccion, encapsulamiento, herencia, polimorfismo, composición, inversión de dependencias, para crear componentes reutilizables y flexibles.
 - **DRY** (Don't Repeat Yourself): Minimiza la repetición innecesaria de código.
 - **Resumen de Reglas OWASP Implementadas:**
 - **Validación de datos**: Se valida toda la entrada del usuario para garantizar que los datos sean correctos y evitar inyecciones de código.
@@ -69,7 +69,7 @@ Dentro de la carpeta "src/Documentation" se encuentra el script "SQLQuery" para 
   
 **Pasos**
 - Abre PowerShell y navega a la raíz de tu solución:
-- Ejecuta el siguiente comando de migración con las rutas correctas en PowerShell:
+- Una vez posicionado en la raíz de tu solución, ejecuta el siguiente comando de migración con las rutas correctas en PowerShell:
 ```
 dotnet ef migrations add InitialCreate --project "Login\Infrastructure\Infrastructure.csproj" --startup-project "Login\Api.Presentation\Api.Presentation.csproj"
 ```
@@ -110,13 +110,13 @@ El proyecto está organizado en dos carpetas principales que corresponden a los 
 
 _**Login API**_
 
-La **Login API** tiene como objetivo autenticar a los usuarios utilizando sus credenciales (usuario y contraseña), y luego genera un **JWT** que se usa para la autorización en 
+La **Login API** tiene como objetivo autenticar a los usuarios utilizando sus credenciales (email y password), y luego genera un **JWT** que se usa para la autorización en 
 otras API del sistema.
 
 **Endpoints**
 
 - **POST ```/api/login/authorize```**
-  - Recibe las credenciales del usuario (correo electrónico y contraseña).
+  - Recibe las credenciales del usuario (email y password).
   - Verifica las credenciales contra la base de datos.
   - Si las credenciales son correctas, genera un **JWT**.
   - Devuelve el token JWT al usuario.
