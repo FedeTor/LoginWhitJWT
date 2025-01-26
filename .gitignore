@@ -1,34 +1,37 @@
-# .NET build results
+# Build results
+bin/
+obj/
 [Dd]ebug/
+[Rr]elease/
 [Dd]ebugPublic/
 [Dd]ist/
-[Rr]elease/
-[Rr]eleases/
 x64/
 x86/
 [Aa]rmeabi/
 [Aa]rmeabi-v7a/
 [Aa]rm64/
 [Aa]rm/
-[Bb]in/
-[Oo]bj/
 
-# User-specific files
+# Visual Studio-related files
 .vs/
-.idea/
 .vscode/
+.idea/
+*.suo
 *.user
 *.userosscache
-*.suo
 *.sln.docstates
 
-# PostgreSQL Database Backups
+# ASP.NET Core and .NET Core Files
+project.lock.json
+project.fragment.lock.json
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# Temporary files
 *.sql
 *.dump
 *.backup
-
-# PostgreSQL migration files or local db files (if using migrations)
-migrations/
 *.db
 *.sqlite
 *.postgresql
@@ -37,53 +40,22 @@ migrations/
 App_Data/*.mdf
 App_Data/*.ldf
 
-# Configuration files (local settings)
-appsettings.Development.json
-appsettings.Local.json
-secrets.json
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows image file caches
+# Windows-specific files
 Thumbs.db
 ehthumbs.db
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# macOS
+.DS_Store
+
+# Node.js dependencies (if applicable)
+node_modules/
+dist/
+
+# Migration files
+migrations/
 
 # Windows Installer files
 *.cab
 *.msi
 *.msm
 *.msp
-
-# ASP.NET Temporary files
-# Comment out if you don't want to ignore them.
-# .vsconfig
-# node_modules
-# dist/
-
-# ASP.NET Core Files
-project.lock.json
-project.fragment.lock.json
-
-# VS for Mac
-.vscode/
-.idea/
-.vs/
-
-# .NET Core
-project.lock.json
-project.fragment.lock.json
-
-# User-specific files
-.vs/
-.idea/
-.vscode/
