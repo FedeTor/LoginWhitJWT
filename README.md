@@ -72,11 +72,11 @@ Dentro de la carpeta "src/Documentation" se encuentra el script "SQLQuery" para 
 - Abre PowerShell y navega a la raíz de tu solución:
 - Una vez posicionado en la raíz de tu solución, ejecuta el siguiente comando de migración con las rutas correctas en PowerShell:
 ```
-dotnet ef migrations add InitialCreate --project "Login\Infrastructure\Infrastructure.csproj" --startup-project "Login\Api.Presentation\Api.Presentation.csproj"
+dotnet ef migrations add InitialCreate --project "src/Login/Infrastructure/Infrastructure.csproj" --startup-project "src/Login/Api.Presentation/Api.Presentation.csproj"
 ```
 - Actualizar la base de datos: Ahora que has creado la migración, puedes aplicarla a la base de datos. Para hacerlo, ejecuta el siguiente comando:
 ```
-dotnet ef database update --project "Login\Infrastructure\Infrastructure.csproj" --startup-project "Login\Api.Presentation\Api.Presentation.csproj"
+dotnet ef database update --project src/Login/Infrastructure/Infrastructure.csproj --startup-project src/Login/Api.Presentation/Api.Presentation.csproj
 ```
 
 ## ⚙️ **_Instrucciones de Ejecución_**
