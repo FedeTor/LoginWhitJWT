@@ -136,7 +136,25 @@ los endpoints de usuario.
 
 **Endpoints**
 - GET **```/api/user/all```**: Obtiene todos los usuarios
+  - Obtiene todos los usuarios.
 - GET **```/api/user/get```**: Obtiene un usuario por ID
+  - Obtiene un usuario por ID.
 - POST **```/api/user/create```**: Agrega un nuevo usuario
+  - Agrega un nuevo usuario.
+  - Nota: Este endpoint no requiere autorización. El usuario puede crear un nuevo usuario sin necesidad de un JWT, lo cual es útil para realizar pruebas de la API.
 - PUT **```/api/user/update```**: Actualiza un usuario existente
+  - Actualiza un usuario existente.
 - DELETE **```/api/user/delete```**: Elimina de forma lógica un usuario
+  - Elimina de forma lógica un usuario.
+
+**Autenticación y autorización**
+Para acceder a los endpoints de la User API (excepto para crear usuarios), es necesario incluir un JWT en la cabecera de la solicitud. La estructura correcta para ingresar el token es la siguiente:
+```
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFVzZXIiOiIyIiwibmJmIjoxNzM3OTI4MDUwLCJleHAiOjE3Mzc5MzE2NTAsImlhdCI6MTczNzkyODA1MH0.jz5oqnLX6EMwB0aqWUYwzmqNJcp5ulet4EZfs__LP84
+```
+
+**Configuración de Swagger**
+Swagger está configurado para realizar las pruebas necesarias de la Login API y User API.
+
+- Login API: Swagger permite probar los endpoints de autorización, refresco de token y revocación de token sin necesidad de configurar manualmente el token.
+- User API: Para los endpoints de la User API, solo es necesario incluir el JWT en el encabezado de la solicitud como se indica arriba, y Swagger maneja la autorización automáticamente para realizar las pruebas.
