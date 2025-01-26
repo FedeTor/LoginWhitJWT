@@ -28,7 +28,7 @@ namespace Api.Presentation.Middleware
             }
             catch (KeyNotFoundException ex)
             {
-                _logger.LogWarning("Token not found: {Message}", ex.Message);
+                _logger.LogWarning("Resource not found: {Message}", ex.Message);
                 await HandleExceptionAsync(context, StatusCodes.Status404NotFound, ex.Message, ex);
             }
             catch (UnauthorizedAccessException ex)

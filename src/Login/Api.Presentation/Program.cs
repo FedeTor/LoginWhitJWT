@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration)
-    .MinimumLevel.Override("Microsoft.EntityFrameworkCore.Database.Command", Serilog.Events.LogEventLevel.Warning) // Filtra solo a Warning o superior
+    .MinimumLevel.Override("Microsoft.EntityFrameworkCore.Database.Command", Serilog.Events.LogEventLevel.Warning)
     .CreateLogger();
 
 builder.Services.AddInfrastructure(builder.Configuration);
@@ -17,7 +17,16 @@ builder.Services.AddApplication();
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Title = "Api Login",
+        Version = "v1",
+        Description = "API para gestionar el inicio de sesión, el token de actualización y la revocación de tokens JWT"
+    });
+});
+
 
 var loggerFactory = LoggerFactory.Create(logging =>
 {

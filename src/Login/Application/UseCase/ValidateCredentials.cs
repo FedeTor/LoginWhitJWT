@@ -34,11 +34,11 @@ namespace Application.UseCase
 
             var user = await _userRepository.FindAsync(u => u.Email == request.Email && u.Active == true);
             if (user == null)
-                throw new UnauthorizedAccessException("Invalid credentials.");
+                throw new UnauthorizedAccessException($"User not found or inactive for email: {request.Email}");
 
             string passwordSaved = EncryptionService.EncryptPassword(request.Password, user.Salt);
             if (user.Hash != passwordSaved)
-                throw new UnauthorizedAccessException("Invalid credentials.");
+                throw new UnauthorizedAccessException("Invalid password for the given user.");
 
             var tokenHistoryData = await GenerateAndSaveTokensAsync(user);
 

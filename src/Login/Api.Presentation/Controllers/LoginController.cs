@@ -31,8 +31,6 @@ namespace Api.Presentation.Controllers
             _logger.LogInformation("Start Authorize - Resquest: {0}", JsonConvert.SerializeObject(request.Email));
 
             var authorizeUser = await _validateCredentialsService.AuthenticateUserService(request);
-            if (authorizeUser == null)
-                return Unauthorized();
 
             return Ok(authorizeUser);
         }
@@ -49,10 +47,12 @@ namespace Api.Presentation.Controllers
                 throw new InvalidOperationException("The token has not expired.");
 
             string userIdClaim = jwtToken.Claims.First(x => x.Type == "IdUser").Value;
+            if (string.IsNullOrEmpty(userIdClaim))
+                throw new InvalidOperationException("The token does not contain a valid user ID.");
+
             request.UserId = int.Parse(userIdClaim);
 
             var result = await _validateRefreshTokenService.RenewTokenService(request);
-
             return Ok(result);
         }
 
