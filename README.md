@@ -135,16 +135,16 @@ La **User API** proporciona un conjunto de operaciones para gestionar usuarios. 
 los endpoints de usuario.
 
 **Endpoints**
-- GET **```/api/user/all```**: Obtiene todos los usuarios
+- **GET ```/api/user/all```**: Obtiene todos los usuarios
   - Obtiene todos los usuarios.
-- GET **```/api/user/get```**: Obtiene un usuario por ID
+- **GET ```/api/user/get```**: Obtiene un usuario por ID
   - Obtiene un usuario por ID.
-- POST **```/api/user/create```**: Agrega un nuevo usuario
+- **POST ```/api/user/create```**: Agrega un nuevo usuario
   - Agrega un nuevo usuario.
   - Nota: Este endpoint no requiere autorización. El usuario puede crear un nuevo usuario sin necesidad de un JWT, lo cual es útil para realizar pruebas de la API.
-- PUT **```/api/user/update```**: Actualiza un usuario existente
+- **PUT ```/api/user/update```**: Actualiza un usuario existente
   - Actualiza un usuario existente.
-- DELETE **```/api/user/delete```**: Elimina de forma lógica un usuario
+- **DELETE ```/api/user/delete```**: Elimina de forma lógica un usuario
   - Elimina de forma lógica un usuario.
 
 **Autenticación y autorización**
